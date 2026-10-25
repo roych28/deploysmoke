@@ -10,7 +10,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test test/*.test.mjs",
     "test:unit": "node --test test/secret-guard.test.mjs test/prove-its-live.test.mjs test/multi-session-git.test.mjs test/permission-unblock.test.mjs",
     "test:smoke": "node --test test/post-deploy-smoke.test.mjs",
     "browsers": "playwright install chromium webkit"
