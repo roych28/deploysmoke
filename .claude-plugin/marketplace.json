@@ -1,0 +1,15 @@
+{
+  "name": "deploysmoke",
+  "description": "Skills for Claude Code that stop an agent from breaking production",
+  "owner": {
+    "name": "Roy Chemo",
+    "url": "https://github.com/roych28"
+  },
+  "plugins": [
+    {
+      "name": "deploysmoke",
+      "source": "./",
+      "description": "Free tier: post-deploy smoke test, prove-its-live, multi-session git, secret guard, permission unblock"
+    }
+  ]
+}

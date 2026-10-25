@@ -1,0 +1,21 @@
+{
+  "name": "deploysmoke",
+  "version": "0.1.0",
+  "description": "Skills for Claude Code that stop an agent from breaking production",
+  "license": "MIT",
+  "author": "Roy Chemo",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "test:unit": "node --test test/secret-guard.test.mjs test/prove-its-live.test.mjs test/multi-session-git.test.mjs test/permission-unblock.test.mjs",
+    "test:smoke": "node --test test/post-deploy-smoke.test.mjs",
+    "browsers": "playwright install chromium webkit"
+  },
+  "dependencies": {
+    "playwright": "1.63.0"
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acme Widgets (broken on purpose)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    deploysmoke test fixture. Every bug below is planted, and post-deploy-smoke must catch each one:
+      1. img/logo.png does not exist                      -> http 404 + broken image
+      2. app.js calls a function that does not exist      -> JS error
+      3. img/product.png returns 200 but is not an image  -> naturalWidth 0
+      4. .reveal never gets .is-visible (wrong selector)  -> invisible image + unrevealed block
+      5. .cta is pushed past the right edge under 480px   -> cut off + sideways scroll at 390
+  -->
+  <header class="top">
+    <img class="logo" src="img/logo.png" alt="Acme logo" width="120" height="40">
+    <nav><a href="#features">Features</a> <a href="#team">Team</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="img/hero.png" alt="Hero" width="640" height="320">
+      <h1>Widgets that ship</h1>
+      <a class="cta" href="#signup">Book a demo</a>
+    </section>
+    <section id="features">
+      <h2>Product</h2>
+      <img src="img/product.png" alt="Product shot" width="480" height="320">
+    </section>
+    <section id="team" class="reveal">
+      <h2>Our team</h2>
+      <img src="img/team.png" alt="Team photo" width="480" height="320">
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

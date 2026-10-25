@@ -1,0 +1,14 @@
+{
+  "name": "deploysmoke",
+  "displayName": "deploysmoke",
+  "version": "0.1.0",
+  "description": "Skills for Claude Code that stop an agent from breaking production: smoke-test every deploy in real browsers, prove what is actually live, keep parallel sessions from clobbering git, keep secrets out of commits and chat, and unblock denied tool calls with the narrowest rule.",
+  "author": {
+    "name": "Roy Chemo",
+    "url": "https://github.com/roych28"
+  },
+  "homepage": "https://github.com/roych28/deploysmoke",
+  "repository": "https://github.com/roych28/deploysmoke",
+  "license": "MIT",
+  "keywords": ["deploy", "smoke-test", "playwright", "production", "git", "secrets", "permissions", "vercel"]
+}
