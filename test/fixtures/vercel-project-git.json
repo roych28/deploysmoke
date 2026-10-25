@@ -1,0 +1,14 @@
+{
+  "id": "prj_fixture",
+  "name": "fixture-site",
+  "targets": {
+    "production": {
+      "id": "dpl_live",
+      "url": "fixture-site-abc123.vercel.app",
+      "readyState": "READY",
+      "createdAt": 1790000000000,
+      "alias": ["fixture-site.vercel.app"],
+      "meta": { "githubCommitSha": "1111111111111111111111111111111111111111", "githubCommitRef": "main" }
+    }
+  }
+}

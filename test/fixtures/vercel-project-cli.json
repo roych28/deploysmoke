@@ -1,0 +1,14 @@
+{
+  "id": "prj_cli",
+  "name": "cli-site",
+  "targets": {
+    "production": {
+      "id": "dpl_cli",
+      "url": "cli-site-xyz.vercel.app",
+      "readyState": "READY",
+      "createdAt": 1790000000000,
+      "alias": ["cli-site.vercel.app"],
+      "meta": { "actor": "cli" }
+    }
+  }
+}

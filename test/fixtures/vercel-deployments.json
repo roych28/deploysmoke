@@ -1,0 +1,7 @@
+{
+  "deployments": [
+    { "uid": "dpl_failed", "url": "fixture-site-new.vercel.app", "state": "ERROR", "created": 1790000500000, "meta": { "githubCommitSha": "2222222222222222222222222222222222222222" } },
+    { "uid": "dpl_live", "url": "fixture-site-abc123.vercel.app", "state": "READY", "created": 1790000000000, "meta": { "githubCommitSha": "1111111111111111111111111111111111111111" } },
+    { "uid": "dpl_old", "url": "fixture-site-old.vercel.app", "state": "READY", "created": 1789000000000, "meta": { "githubCommitSha": "0000000000000000000000000000000000000000" } }
+  ]
+}
